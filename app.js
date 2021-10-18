@@ -26,3 +26,11 @@ function displaysModal() {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 }
+
+//handling keyboard events
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === `Escape`) {
+        closeModals();
+    }
+})
